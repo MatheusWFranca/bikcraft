@@ -1,0 +1,476 @@
+/* Estilos Gerais */
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  /* padrão para o site todo */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  border: 3px solid #face31;
+  padding: 10px 30px;
+  color: #face31;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.btn:hover {
+  /* Adicionando hover no botão */
+  color: white;
+  border-color: white;
+}
+
+.btn.btn-preto:hover {
+  color: black;
+  border-color: black;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.subtitulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 8px auto 20px auto;
+  /* sentido horario */
+}
+
+.subtitulo:hover {
+  color: #face31
+}
+
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 8px 20px 200;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  top: 0;
+  background: #face31;
+  padding: 6px 0;
+  /* Preenchimento do header */
+  position: fixed;
+  /* Top fixado */
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: right;
+  /* Alinhar a linha */
+}
+
+.header_menu ul li a.menu_ativo {
+  color: black;
+}
+
+.header_menu ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  /* Alinhar a lista ao lado */
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.header_menu ul li a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Letra maisculo  */
+  letter-spacing: .1em;
+  font-size: 14px;
+  line-height: 40px;
+  /* centralizar a linha */
+  padding: 10px 0;
+  /* muda o tamanho da box do clique */
+}
+
+.header_menu ul li a:hover {
+  /* mudar a cor ao passar o cursor */
+  color: black
+}
+
+/* Introdução */
+
+.introducao {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 90px;
+  padding-top: 100px;
+
+}
+
+.introducao h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.quote-externo {
+  font-size: 14px;
+  max-width: 320px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.quote-externo p {
+  font-style: italic;
+}
+
+.quote-externo p:before,
+.quote-externo p:after {
+  /* linha separadora */
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 14px auto 17px auto;
+  /* sentido horario */
+}
+
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .1em;
+  /* espaçamento entre as letras */
+}
+
+
+/* Introdução interna */
+
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.introducao-interna h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+  content: "";
+  display: block;
+  font-weight: bold;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 12px auto 20px auto;
+}
+
+/* Produtos */
+
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos-lista li {
+  text-align: center;
+  /* Alinha o icone e texto dentro da box */
+  background: #face31
+}
+
+.produtos-lista li img {
+  margin: 0 auto;
+}
+
+.produtos-lista li h3 {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.produtos-lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 2px auto 20px auto;
+}
+
+.produtos-lista li p {
+  padding: 5px 15px 15px 5px;
+}
+
+.produtos-icone {
+  background: black;
+  padding: 20px;
+}
+
+.call {
+  padding: 5px;
+  text-align: center;
+  clear: both;
+  margin-top: 40px;
+}
+
+.call p {
+  margin-bottom: 30px;
+}
+
+/* Portfólio */
+
+.portfolio {
+  width: 100%;
+  background: black;
+  padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+  color: #face31;
+}
+
+.portfolio .subtitulo::after {
+  background: #face31;
+}
+
+.portfolio_lista li:last-child {
+  margin-top: 20px;
+}
+
+.portfolio .call p {
+  color: white;
+}
+
+/* qualidade */
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade:after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url(../img/linhas.svg) no-repeat center;
+  position: absolute;
+  top: 188px;
+  right: 162px;
+  z-index: -1;
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade-lista {
+  padding-top: 20px;
+  overflow: hidden;
+  /* Clear Fix */
+}
+
+.qualidade-lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade-lista li h3 {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.qualidade-lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 6px auto 20px auto;
+}
+
+/*Quebra*/
+
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 40px;
+
+}
+
+.quebra .quote-externo {
+  max-width: 400px;
+}
+
+/* footer */
+.footer {
+  width: 100% auto;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #face31;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #face31;
+  margin: 12px 0px 16px 0px;
+}
+
+.footer-historia {
+  padding-right: 40px;
+}
+
+.footer-contato ul li {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-redes ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.copy {
+  padding: 40px 10px;
+  font-size: 14px;
+  background: #face31;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+/* Java script */
+
+.js [data-slide] {
+  position: relative;
+}
+
+
+.js [data-slide]>* {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+
+
+.js [data-slide]>.active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+
+.js [data-slide-nav] button.active {
+  background: #face31;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+} 
+
+#form-sucesso {
+  color: green;
+
+}
+
+#form-erro {
+  color: red;
+}
